@@ -1,8 +1,35 @@
+html {
+    height: 100%
+}
+
+body {
+    background-image: linear-gradient(#134d71,#78a7c6, #f7e4bf );
+    font-family:'Quicksand', sans-serif; 
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000;
-*/
+black - #000000; */
