@@ -43,8 +43,6 @@ header {
 margin-right: 150px;
 } 
 
-
-
 #button-message {
   background-color: #134d71;
   color: white;
@@ -58,13 +56,17 @@ margin-right: 150px;
 }
 
 .mantra-zone {
+  height: 150px;
+  font-size: 20px;
   padding: 16px;
   max-width: 55%;
   margin: 7% auto;
   background-color: #f2f2f2;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /* font-family: 'Quicksand', sans-serif;
 COLORS
