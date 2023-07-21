@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-  
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <title>✨ Self Care Center ✨</title>
+</head>
+<body>
+  <header>
+    <h1>✨ Self Care Center ✨</h1>
+  </header>
+  <main>
+    <h2>Which type of message?</h2>
+    <section class="button-container">
+          <div class="radio-buttons">
+            <input type="radio" id="affirmation" name="message-type" value="affirmation">
+            <label for="affirmation">affirmation</label>
+            <input type="radio" id="mantra" name="message-type" value="mantra">
+            <label for="mantra">mantra</label>
+          </div>
+        <button type="button" id="button-message">Receive Message</button>
+    </section>
+    <section class="white-box mantra-zone">
+      <figure>
+        <img src="./assets/meditate.svg" alt="Meditation illustration" height="100">
+        <figcaption>Image caption or description</figcaption>
+      </figure>
+    </section>
+  </main>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="assets/data.js"></script>
+</body>
 </html>
