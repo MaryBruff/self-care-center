@@ -4,23 +4,22 @@ document.addEventListener('DOMContentLoaded', function () {
     var affirmationRadio = document.getElementById('affirmation')
     var mantraRadio = document.getElementById('mantra')
     var messageArea = document.querySelector('.white-box.mantra-zone')
-    var addButton = document.getElementById("button-add-message");
-    var messageForm = document.querySelector(".messageForm");
-    var meditateImage = document.querySelector('.white-box.mantra-zone img');
+    var addButton = document.getElementById("button-add-message")
+    var messageForm = document.querySelector(".messageForm")
+    var meditateImage = document.querySelector('.white-box.mantra-zone img')
 
 
     //Event Listeners:
     receiveMessageButton.addEventListener('click', getMessage)
     addButton.addEventListener('click', function() {
-      // Toggle the visibility of the form and button by checking their current state
       if (messageForm.classList.contains('hidden')) {
-        messageForm.classList.remove('hidden'); // Display the form
-        addButton.style.display = 'none'; // Hide the "Add Your Own Message" button
-        meditateImage.style.display = 'none'; // Hide the meditation image
+        messageForm.classList.remove('hidden')
+        addButton.style.display = 'none'
+        meditateImage.style.display = 'none'
       } else {
-        messageForm.classList.add('hidden'); // Hide the form
-        addButton.style.display = 'block'; // Show the "Add Your Own Message" button
-        meditateImage.style.display = 'block'; // Show the meditation image
+        messageForm.classList.add('hidden')
+        addButton.style.display = 'block'
+        meditateImage.style.display = 'block'
       }
     })
 
