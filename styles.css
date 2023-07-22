@@ -80,18 +80,48 @@ width: 245px;
 height: 35px;
 }
 
-.messageForm.hidden {
-  display: none;
+.messageForm label {
+  flex: 0 0 150px; 
+  font-size: 20px;
+  margin-bottom: 10px; 
 }
 
+#message-type {
+  padding: 5px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
 
+#message-text{
+  font-size: 18px;
+  height: 73px;
+  width: 545px;
+}
 
+.messageForm button[type="submit"] {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #78a7c6;
+  color: white;
+  display: flex;
+  flex-direction: column ;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 245px;
+  height: 35px;
+}
 
-/* 🧘 Provided comp details: 🧘
-font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
+.messageForm.hidden {
+  display: none}
+    
+  /* 🧘 Provided comp details: 🧘
+  font-family: 'Quicksand', sans-serif;
+  COLORS
+  light-yellow - #f7e4bf;
+  light-blue - #78a7c6;
+  dark-blue - #134d71;
+  white - #ffffff;
 black - #000000; */
