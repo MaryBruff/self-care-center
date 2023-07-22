@@ -56,30 +56,42 @@ margin-right: 150px;
 }
 
 .mantra-zone {
-  height: 150px;
-  font-size: 20px;
-  padding: 16px;
-  max-width: 55%;
-  margin: 7% auto;
-  background-color: #f2f2f2;
-  border-radius: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 7% auto;
+  padding: 16px;
+  max-width: 55%;
+  height: 200px;
 }
 
-/* font-family: 'Quicksand', sans-serif;
+#button-add-message{
+background-color: #134d71;
+color: white;
+font-family: 'Quicksand', sans-serif;
+font-weight: lighter;
+border-radius: 5px;
+font-size: 16px;
+margin: -40px;
+width: 245px;
+height: 35px;
+}
+
+.messageForm.hidden {
+  display: none;
+}
+
+
+
+
+/* 🧘 Provided comp details: 🧘
+font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000; *
-
-
-
-
-
-
-
-
+black - #000000; */
