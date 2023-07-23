@@ -29,25 +29,27 @@ var affirmations = [
   'I am full of energy and vitality and my mind is calm and peaceful.',
   'Every day I am getting healthier and stronger.',
   'I honor my body by trusting the signals that it sends me.',
-  'I manifest perfect health by making smart choices.']
+  'I manifest perfect health by making smart choices.'
+]
 
-  var mantras = [
-    'Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.',
-    'Don’t let yesterday take up too much of today.',
-    'Every day is a second chance.',
-    'Tell the truth and love everyone.',
-    'I am free from sadness.',
-    'I am enough.',
-    'In the beginning it is you, in the middle it is you and in the end it is you.',
-    'I love myself.',
-    'I am present now.',
-    'Inhale the future, exhale the past.',
-    'This too shall pass.',
-    'Yesterday is not today.',
-    'The only constant is change.',
-    'Onward and upward.',
-    'I am the sky, the rest is weather.',]
-  
+var mantras = [
+  'Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.',
+  'Don’t let yesterday take up too much of today.',
+  'Every day is a second chance.',
+  'Tell the truth and love everyone.',
+  'I am free from sadness.',
+  'I am enough.',
+  'In the beginning it is you, in the middle it is you and in the end it is you.',
+  'I love myself.',
+  'I am present now.',
+  'Inhale the future, exhale the past.',
+  'This too shall pass.',
+  'Yesterday is not today.',
+  'The only constant is change.',
+  'Onward and upward.',
+  'I am the sky, the rest is weather.',
+]
+
 var pushedNewMessage = []
 
 //Functions:
@@ -95,7 +97,7 @@ function displayUserMessage(event) {
   } else if (selectedMessageType === 'mantra') {
     selectedMessageArray = mantras;
   }
-  
+
   selectedMessageArray.push(messageText)
 
   elements.messageForm.classList.add('hidden')
@@ -106,4 +108,3 @@ function displayUserMessage(event) {
 
   elements.messageForm.reset()
 }
-
