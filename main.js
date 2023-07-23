@@ -95,11 +95,7 @@ function displayUserMessage(event) {
   } else if (selectedMessageType === 'mantra') {
     selectedMessageArray = mantras;
   }
-
-console.log('Selected Message Type:', selectedMessageType)
-console.log('Custom Message:', messageText)
-console.log('Selected Message Array:', selectedMessageArray)
-
+  
   selectedMessageArray.push(messageText)
 
   elements.messageForm.classList.add('hidden')
