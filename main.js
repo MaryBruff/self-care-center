@@ -52,42 +52,42 @@ var pushedNewMessage = []
 
 //Functions:
 function getRandomMessage(messageArray) {
-  return messageArray[Math.floor(Math.random() * messageArray.length)];
+  return messageArray[Math.floor(Math.random() * messageArray.length)]
 }
 
 function getMessage() {
-  var selectedMessageArray;
+  var selectedMessageArray
   if (elements.affirmationRadio.checked) {
-    selectedMessageArray = affirmations;
+    selectedMessageArray = affirmations
   } else if (elements.mantraRadio.checked) {
-    selectedMessageArray = mantras;
+    selectedMessageArray = mantras
   } else {
-    alert("⭐ Please select a message type! ⭐");
-    return;
+    alert("⭐ Please select a message type! ⭐")
+    return
   }
 
-  var randomMessage = getRandomMessage(selectedMessageArray);
-  elements.messageArea.textContent = randomMessage;
-  elements.mantra.classList.toggle('show-message', !!randomMessage);
+  var randomMessage = getRandomMessage(selectedMessageArray)
+  elements.messageArea.textContent = randomMessage
+  elements.mantra.classList.toggle('show-message', !!randomMessage)
 }
 
 function toggleElements() {
-  elements.messageForm.classList.toggle('hidden');
-  elements.addButton.style.display = elements.messageForm.classList.contains('hidden') ? 'block' : 'none';
-  elements.meditateImage.style.display = elements.messageForm.classList.contains('hidden') ? 'block' : 'none';
+  elements.messageForm.classList.toggle('hidden')
+  elements.addButton.style.display = elements.messageForm.classList.contains('hidden') ? 'block' : 'none'
+  elements.meditateImage.style.display = elements.messageForm.classList.contains('hidden') ? 'block' : 'none'
 }
 
 function displayUserMessage(event) {
   event.preventDefault();
 
-  var messageText = document.getElementById('message-text').value.trim();
+  var messageText = document.getElementById('message-text').value.trim()
   if (!messageText) {
-    alert('⭐ Please enter a valid message! ⭐');
+    alert('⭐ Please enter a valid message! ⭐')
     return;
   }
 
-  var messageTypeSelect = document.getElementById('message-type');
-  var selectedMessageType = messageTypeSelect.value;
+  var messageTypeSelect = document.getElementById('message-type')
+  var selectedMessageType = messageTypeSelect.value
 
   var selectedMessageArray;
   if (selectedMessageType === 'affirmation') {
@@ -96,18 +96,18 @@ function displayUserMessage(event) {
     selectedMessageArray = mantras;
   }
 
-console.log('Selected Message Type:', selectedMessageType);
-console.log('Custom Message:', messageText);
-console.log('Selected Message Array:', selectedMessageArray);
+console.log('Selected Message Type:', selectedMessageType)
+console.log('Custom Message:', messageText)
+console.log('Selected Message Array:', selectedMessageArray)
 
-  selectedMessageArray.push(messageText);
+  selectedMessageArray.push(messageText)
 
-  elements.messageForm.classList.add('hidden');
-  elements.messageArea.textContent = messageText;
-  elements.mantra.classList.add('show-message');
-  elements.addButton.style.display = 'block';
-  elements.meditateImage.style.display = 'block';
+  elements.messageForm.classList.add('hidden')
+  elements.messageArea.textContent = messageText
+  elements.mantra.classList.add('show-message')
+  elements.addButton.style.display = 'block'
+  elements.meditateImage.style.display = 'block'
 
-  elements.messageForm.reset();
+  elements.messageForm.reset()
 }
 
