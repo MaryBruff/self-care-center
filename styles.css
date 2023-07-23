@@ -1,85 +1,129 @@
 html {
-  height: 100%;
+	height:100%;
 }
 
 body {
-  background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
+	background-image:linear-gradient(#134d71,#78a7c6,#f7e4bf);
+	text-align:center;
+	font-family:'Quicksand',sans-serif;
 }
 
 header {
-  color: white;
-  display: flex;
-  justify-content: center;
+	color:white;
+	display:flex;
+	justify-content:center;
 }
 
- h2 {
-  color: white;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 20px;
+h2 {
+	color:white;
+	text-align:center;
+	margin-top:80px;
+	margin-bottom:20px;
 }
 
 .button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  background-color: white;
-  padding: 20px;
-  max-width: 600px;
-  border-radius: 16px;
-  margin: 10px auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+	align-items:center;
+	text-align:center;
+	background-color:white;
+	max-width:600px;
+	border-radius:10px;
+	margin:10px auto;
+	height:115px;
 }
 
 .radio-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  font-size: 20px;
+	font-size:20px;
+	font-style:italic;
 }
 
+.label {
+	margin-right:150px;
+}
 
 #button-message {
-  background-color: #134d71;
-  color: white;
-  margin-top: 20px; 
-  margin-bottom: 10px; 
-  border-radius: 5px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  padding: 10px 20px;
+	background-color:#134d71;
+	color:white;
+	font-weight:lighter;
+	border-radius:5px;
+	font-family:'Quicksand',sans-serif;
+	font-size:20px;
+	margin:-20px;
+	width:200px;
+	height:30px;
 }
 
 .mantra-zone {
-  padding: 16px;
-  max-width: 55%;
-  margin: 7% auto;
-  background-color: #f2f2f2;
-  border-radius: 10px;
+	font-size:25px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	background-color:#f2f2f2;
+	border-radius:10px;
+	margin:7% auto;
+	padding:16px;
+	max-width:55%;
+	height:200px;
 }
 
+#button-add-message {
+	background-color:#134d71;
+	color:white;
+	font-family:'Quicksand',sans-serif;
+	font-weight:lighter;
+	border-radius:5px;
+	font-size:16px;
+	margin:-40px;
+	width:245px;
+	height:35px;
+}
 
+.messageForm label {
+	flex:0 0 150px;
+	font-size:20px;
+	margin-bottom:10px;
+}
 
+#message-type {
+	padding:5px;
+	margin-bottom:12px;
+	font-size:13px;
+}
 
+#message-text {
+	font-size:18px;
+	height:73px;
+	width:545px;
+}
 
+.messageForm button[type="submit"] {
+	font-family:'Quicksand',sans-serif;
+	background-color:#78a7c6;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+	align-items:center;
+	text-align:center;
+	margin:10px auto;
+	border-radius:5px;
+	font-size:16px;
+	width:245px;
+	height:35px;
+}
 
+.messageForm.hidden {
+	display: none
+}
 
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
-black - #000000; *
-
-
-
-
-
-
-
-
+  /* 🧘 Provided comp details: 🧘
+  font-family: 'Quicksand', sans-serif;
+  COLORS
+  light-yellow - #f7e4bf;
+  light-blue - #78a7c6;
+  dark-blue - #134d71;
+  white - #ffffff;
+black - #000000; */
