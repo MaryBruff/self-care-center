@@ -10,7 +10,7 @@
       <h1>✨ Self Care Center ✨</h1>
     </header>
     <main>
-      <h2>Which type of message?</h2>
+      <h2>Choose a Message Type</h2>
       <section class="button-container">
         <div class="radio-buttons">
           <input type="radio" id="affirmation" name="message-type" value="affirmation">
@@ -20,26 +20,26 @@
         </div>
         <button type="button" id="button-message">Receive Message</button>
       </section>
-      <section class="white-box mantra-zone">
-        <figure>
-          <img src="./assets/meditate.svg" alt="Meditation illustration" height="100">
-        </figure>
-        <section class="message-box">
-          <button type="button" id="button-add-message">🪷 Add Your Own Message 🪷</button>
-          <form class="messageForm hidden">
-            <label for="message-type">Message Type:</label>
-            <select id="message-type" name="message-type">
-              <option value="affirmation">Affirmation</option>
-              <option value="mantra">Mantra</option>
-            </select>
-            <section class="message-box">
-              <label for="message-text">Message Text:</label>
-              <input type="text" id="message-text" name="message-text">
-              <button type="submit">✨ Submit ✨ </button>
-            </form>
-          </section>      
-        </section>
-  </main>
-  <script type="text/javascript" src="main.js"></script>
-</body>
+      <section class="white-box mantra-zone" data-affirmation-gradient="linear-gradient(#b9f6ca, #81c784)" data-mantra-gradient="linear-gradient(#84ffff, #18ffff)">
+      <figure>
+        <img src="./assets/meditate.svg" alt="Meditation illustration" height="100">
+      </figure>
+      <section class="message-box">
+        <button type="button" id="button-add-message">🪷 Add Your Own Message 🪷</button>
+        <form class="messageForm hidden">
+          <label for="message-type">Message Type:</label>
+          <select id="message-type" name="message-type">
+            <option value="affirmation">Affirmation</option>
+            <option value="mantra">Mantra</option>
+          </select>
+          <section class="message-box">
+            <label for="message-text">Message Text:</label>
+            <input type="text" id="message-text" name="message-text">
+            <button type="submit">✨ Submit ✨ </button>
+        </form>
+        </section>      
+      </section>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
